@@ -1,0 +1,41 @@
+*{
+	line-height: 120%;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+body > *{
+	padding: 1% 1%;
+}
+
+body >header {
+	background: pink;
+	width: 14em;
+	float: left;
+}
+
+main {
+	background: yellow;
+	width: 20em;
+	float: left;
+}
+
+[class="related"]{
+	background: MediumAquamarine;
+	width: 14em;
+	float: left;
+	line-height: 120%;
+}
+
+aside {
+	background: BurlyWood;
+	width: 10em;
+	float:left;
+}
+
+footer{
+	background: grey;
+	width: 20em;
+	float: left;
+}
+

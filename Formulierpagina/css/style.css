@@ -1,0 +1,395 @@
+/* Algemene Styling webpagina. Geen standaard margins/paddings. */
+
+* {
+	margin: 0;
+	padding: 0em;
+	box-sizing: border-box;
+
+}
+
+/* ---------------------FLEXBOX----------------------- */
+
+/* De body is in dit geval de container dus hier flex. */
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body > * {
+	padding: 1rem;
+}
+
+/* Header, Menu */
+header > nav > ul {
+	display: flex;
+	flex-direction: row;
+}
+
+body > header {
+	background-color: #FDCD01;
+	overflow: hidden;
+
+	flex-basis: 100%;
+}
+
+/* Opleiding CMD-Amsterdam */
+body > main {
+	flex-grow: 1;
+	flex-basis: 50em;
+}
+/* Voorbeeld Projecten */
+[class="related"] > h2 {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+}
+
+[class="related"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+[class="related"] > article {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 30em;
+	margin: 2em 3em 1em 1em;
+}
+
+/* Laatste mededelingen */
+body > aside {
+	background-color: #D3D3D3;
+	display: flex;
+}	
+
+/* Sitemap */
+body > footer {
+	display: flex;
+	flex-grow: 0;
+	flex-wrap: wrap;
+	overflow: scroll;
+}
+
+footer > section > ul {
+	display: flex;
+	flex-basis: 10em;
+	flex-grow: 0;
+}
+
+#sitemap {
+	flex-basis: 37em;
+	flex-grow: 0;
+
+	flex-wrap: wrap;
+}
+
+/* ---------------------FORMULIER STYLING----------------------- */
+body > main > form > fieldset > label {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-grow: 0;
+	margin: 2em 2em ;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+body > main > form {
+	margin: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 20%;
+	background-color: #FDCD01;
+	transition: ease 1s;
+}
+
+body > main > form:hover {
+	background-color: pink;
+	transition: ease 0.5s;
+}
+
+body > main > form > * {
+	flex-basis: 20%;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+
+body > main > form > fieldset > legend {
+	background-color: #FFFFFF;
+}
+
+fieldset {
+	border: 6px dotted white;
+}
+
+input {
+	transition: ease 0.5s;
+}
+
+input:focus {
+	padding: .4em .2em;
+	transition: ease 0.5s;
+	box-shadow: inset .1em .1em .1em pink,
+}
+
+body > main > form > input[type=submit] {
+	margin-top: 2rem;
+	flex-basis: 100%;
+	-webkit-appearance:none;
+	background-color: #FDCD01 ;	
+}
+
+body > main > form > input[type=submit]:hover {
+	background-color: white ;
+	
+}
+
+/* ---------------------STYLING----------------------- */
+
+
+/* Logo styling */
+[src="img/cmd_logo.png"] { 
+	position: absolute;
+	opacity: .2;
+	width: 40em;
+}
+
+/* Menu styling*/
+header > nav > ul > li {
+	margin: 1em;
+}
+
+nav {
+	background-color: white;
+}
+
+/* Styling met kleur*/
+
+body > footer {
+	background-color: #FDCD01;
+}
+
+body > main {
+	background-color: #F0F0F5;
+}
+/* Typografie. */
+
+body > footer > section {
+	margin: 1em;
+}
+
+h1, h2 {
+	font-family: 'Oswald', sans serif;
+	margin-bottom: 1em;
+	color: #4595E6;
+}
+
+h3, h4 {
+	font-family: 'Oswald', sans serif;
+	margin: 1em 0em .5em 0em;
+}
+
+li, {
+	margin-right: 1em;
+}
+
+* {
+	font-family: 'Open Sans', sans serif;
+
+}
+
+a {
+	font-family: 'Open Sans', sans serif;
+	font-weight: 700;
+}
+
+nav {
+	margin: 1em 0em 2em 0em;
+}
+
+
+
+
+/* ---------------------Link Styles + Transforms----------------------- */
+
+a:link {
+	text-decoration: none;
+	color: #269E9F;
+
+}
+
+nav > ul > li > a:hover {
+	text-decoration: none;
+	color: #E9625C;
+	transition: ease 0.5s ;
+}
+
+
+a:hover {
+	text-decoration: none;
+	color: white;
+	transition: ease 0.5s ;
+}
+ul {
+	list-style-type: none;
+}
+
+img:hover {
+	width: 30em;
+}
+
+header:hover {
+	opacity: 0.8;
+	transition: ease 1s,
+}
+
+
+
+
+/* ---------------------CSS Columns----------------------- */
+body > main > article {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-width: 20em;
+  text-align: justify;
+}
+
+
+
+/* ---------------------BORDER - BOX - TEXT----------------------- */
+
+/* Border */
+
+[src="img/beroepen.jpg"] {
+	border: .3em dotted #FDCD01;
+	width: 25em;
+}
+
+body > header {
+	border-bottom: 1em dotted white;
+}
+
+body > aside {
+	border: 1em dotted white;
+}
+
+body > footer {
+	border: 1em dotted white;
+}
+
+/* Border-radius */
+
+body > header > nav {
+	border-radius: 0em 0em 1em 1em;
+}
+
+
+
+/* Box-shadow */
+
+body > * {
+	box-shadow: inset 0em 0em 7em 2em rgba(0,0,0,0.17);
+}
+
+body > header > nav {
+	box-shadow: 0em 0em .2em .4em rgba(0,0,0,0.17);
+}
+
+/* Logo transform */
+[src="img/cmd_logo.png"] { 
+	right: -2rem;
+	top: -2rem;
+	transform: rotate(-5deg);
+}
+
+/* Text-shadow */
+ h1, h2 {
+ 	text-shadow: 2px 2px #ffffff;
+ }
+
+/* --------------------- MEDIA QUERIES----------------------- */
+
+@media all and (max-width: 50em) {
+	
+  	header > nav > ul {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 70em) {
+	
+	[src="img/beroepen.jpg"] {
+		border: .3em dotted #FDCD01;
+		width: 20em;
+	}
+
+	[class="related"], aside{
+		background-color: #D3D3D3;
+		flex-basis: 50%;
+		flex-direction: column;
+	}
+
+	body > main > form > fieldset > label {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-grow: 0;
+	margin: 2em 2em ;
+	flex-direction: column;
+	text-wrap: wrap;
+}
+
+form {
+	margin: 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+@media all and (max-width: 50em) {
+	
+	[src="img/beroepen.jpg"] {
+		border: .3em dotted #FDCD01;
+		width: 10em;
+	}
+
+	[class="related"], aside{
+		background-color: #D3D3D3;
+		flex-basis: 100%;
+		flex-direction: column;
+		flex-grow: 0;
+		font-size: .8em;
+	}
+
+	#sitemap {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 0;
+		flex-basis: 20%;
+
+		scroll: overflow;
+	}
+
+	body > main > article {
+  		-webkit-column-count: 1;
+  		-moz-column-count: 1;
+ 		column-count: 1;
+  		text-align: justify;
+	}
+
+	form {
+		margin: 2em;
+		text-wrap: wrap;
+		flex-basis: 20%;
+		flex-direction: column;
+}
+
+
+
+}
+
+	
